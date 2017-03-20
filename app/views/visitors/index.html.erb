@@ -1,0 +1,23 @@
+
+
+
+<body bgcolor="#0F4988">
+  <div style="text-align:center;">
+
+
+  <head>
+  <font color="white">
+    <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/style.css">
+  </head>
+        <title>Recruit-R</title>
+             <img src="http://i.imgur.com/ZtJRW6K.png" style="width:500px;height:500px;">
+        <h4> Enter your email to get access to Recruit-R </h4>
+     
+        <%= form_for(:linktest, :url => give_link_path, :method => :post) do |f| %>
+            Email: <%= text_field_tag :email %>
+            <%= f.button :Submit %>
+        <% end %>
+
+
+        </div>
